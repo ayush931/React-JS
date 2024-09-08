@@ -1,7 +1,12 @@
+import User from "./Hello"
+
 function App() {
 
   return (
-    <h1>React with Vite | Ayush</h1>    
+    <>
+      <User/>
+      <h1>Hello World</h1>
+    </>
   )
 }
 
