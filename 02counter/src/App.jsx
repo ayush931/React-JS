@@ -7,8 +7,11 @@ function App() {
 
   const addValue = () => {
     console.log("clicked", counter)
-    if(counter < 20){
-      setCounter(counter + 1)
+    if(counter < 30){
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
     }else{
       alert('Cannot exceed than 20')
     }
