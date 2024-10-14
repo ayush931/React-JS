@@ -24,15 +24,15 @@ export class AuthService {
                return  userAccount;
             }
         } catch (error) {
-            console.log("Appwrite service :: createAccount :: error", error)
+            throw error;
         }
     }
 
     async login({email, password}) {
         try {
-            return await this.account.createEmailPasswordSession(email, password);
+            return await this.account.createEmailSession(email, password);
         } catch (error) {
-            console.log("Appwrite service :: login :: error", error)
+            throw error;
         }
     }
 
@@ -59,3 +59,5 @@ export class AuthService {
 const authService = new AuthService();
 
 export default authService
+
+
