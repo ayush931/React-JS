@@ -1,12 +1,9 @@
-import Pokedex from "./components/Pokedex/Pokedex.tsx";
+import CustomRoutes from "./routes/CustomRoutes";
 
 function App() {
-
-  return (
-    <>
-        <Pokedex />
-    </>
-  )
+  return <>
+    <CustomRoutes />
+  </>;
 }
 
-export default App
+export default App;

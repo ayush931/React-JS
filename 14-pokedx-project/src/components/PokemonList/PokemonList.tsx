@@ -59,7 +59,7 @@ export default function PokemonList() {
           ? 'Loading...'
           : pokemonList.map(
               (p: { name: string; image: string; id: number }) => (
-                <Pokemon name={p.name} image={p.image} key={p.id} />
+                <Pokemon name={p.name} image={p.image} key={p.id} id={p.id} />
               )
             )}
       </div>
